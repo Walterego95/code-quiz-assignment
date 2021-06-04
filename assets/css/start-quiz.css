@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  /* high score page link button... */
+  .quiz-btn {
+    font-size: 2.5rem;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid orange;
+    border-radius: 1rem;
+    margin: 2rem;
+    text-decoration: none;
+    color: rgb(245, 223, 30);
+    background-color: rgb(13, 192, 168);
+  }
+  
+  .quiz-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(226, 140, 226, 0.616);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  
+  }
+  
+  /* timer styling... */
+  #timer-container {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 2rem;
+    color: rgb(161, 78, 161);
+  }
+  
+  /* answer buttons styling... */
+  .choices-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 65%;
+    font-size: 1.8rem;
+    border: 0.1rem solid orange;
+    border-radius: 1rem;
+    background-color: rgba(218, 84, 218, 0.548);
+  }
+  
+  .choices-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(172, 84, 172, 0.616);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: rgb(214, 96, 214);
+    border-radius: 1rem;
+    color: rgb(172, 206, 110);
+  }
+  
+  .choice-text {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  /* green background color for correct answer... */
+  .correct {
+    background-color: rgba(56, 216, 56, 0.74);
+  }
+  /* red background color for wrong answer... */
+  .incorrect {
+    background-color: rgba(235, 5, 5, 0.753);
+  }
+  
+  
+  
+  
+  
+  
+  

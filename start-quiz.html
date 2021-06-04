@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Start</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/quiz-start.css">
+</head>
+<body>
+  <!-- Timer and High Scores Page Link as stylized button -->
+  <header class="header">
+  <a class="quiz-btn" href="high-scores.html">High Scores</a>
+      <p id="timer-container"></p>
+  </header>
+  <!-- Flex container for question and answer from arrays -->
+  <main class="container">
+    <section id="game" class="justify-center flex-column">
+      <h2 id="question">Question Example</h2>
+      <!-- answer and tracking data number for correct/incorrect answers -->
+      <article class="choices-container">
+        <!-- prefix for matching array choices with answers -->
+        <p class="choice-prefix">A</p>
+        <p class="choice-text" data-number="1">Choice 1</p>
+      </article>
+      <article class="choices-container">
+        <p class="choice-prefix">B</p>
+        <p class="choice-text" data-number="2">Choice 2</p>
+      </article>
+      <article class="choices-container">
+        <p class="choice-prefix">C</p>
+        <p class="choice-text" data-number="3">Choice 3</p>
+      </article>
+      <article class="choices-container">
+        <p class="choice-prefix">D</p>
+        <p class="choice-text" data-number="4">Choice 4</p>
+      </article>
+    </section>
+  </main>
+  <script src="./assets/js/start-quiz.js"></script>
+</body>
+</html>
