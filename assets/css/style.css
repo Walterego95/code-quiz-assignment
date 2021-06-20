@@ -1,0 +1,156 @@
+:root {
+    background-color: rgb(255, 240, 252); 
+    font-size: 65%;
+  }
+  
+  /* border box... */
+  * {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: rgb(8, 8, 8);
+  }
+  
+  /* default bottom for headers... */
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 1rem;
+  }
+  
+  /** heading sizes and settings **/
+  h1 {
+    font-size: 6.5rem;
+    color: rgb(197, 6, 197);
+    margin-bottom: 4rem;
+  }
+  
+  h1 > span {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 5.2rem;
+    margin-bottom: 5rem;
+    font-weight: 800;
+  }
+  
+  h3 {
+    font-size: 3.8rem;
+    font-weight: 600;
+  }
+  
+  /* instructions... */
+  #instructions {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 5rem;
+  }
+  
+  /* containers & flex... */
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .container > * {
+    width: 100%;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* buttons... */
+  
+  .btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid orange;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(245, 223, 30);
+    background-color: rgb(197, 13, 197);
+  }
+  /* transition animation... */
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(155, 28, 155, 0.616);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  
+  /* forms... */
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid purple;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(207, 7, 207);
+    background-color: rgba(207, 7, 207, 0.418);
+  }
+  
+  input:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(155, 28, 155, 0.616);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  /* final score styling... */
+  .yourFinalScore {
+    font-size: 5.5rem;
+    color: rgb(207, 7, 207);
+    margin-bottom: 4rem;
+  }
+  

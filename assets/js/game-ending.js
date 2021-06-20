@@ -1,0 +1,39 @@
+// save high score names...
+const username = document.getElementById("userName");
+// save score button... 
+const saveScoreBtnEl = document.getElementById("saveScoreBtn");
+
+const finalScore = document.getElementById("finalScore");
+// gets the most recent score from local storage...
+const mostRecentScore = localStorage.getItem("mostRecentScore");
+// sets score to the inner text of the web page paragraph...
+finalScore.innerText = mostRecentScore;
+// parse with json any local storage memory (if any)...
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+// save 3 scores...
+const topThreeScores = 3;
+
+// text input must be non empty...
+username.addEventListener("keyup", () => {
+  saveScoreBtnEl.disabled = !username.value;
+});
+
+// onclick event to submit high score button...
+saveHighScore = (event) => {
+  event.preventDefault();
+
+  const score = {
+    score: mostRecentScore,
+    name: username.value
+  };
+  highScores.push(score);
+
+  // sorts through the scores by descending order...
+  highScores.sort((a, b) => b.score - a.score);
+  // the 3 highest scores kept after sorting...
+  highScores.splice(3);
+  // the highScores array strigified to localStorage...
+  localStorage.setItem('highScores', JSON.stringify(highScores));
+  // relocate to go to the high score page...
+  window.location.assign("high-scores.html");
+}

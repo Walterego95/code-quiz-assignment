@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Game ending</title>
+</head>
+<body>
+  <!-- flex container... -->
+  <main class="container">
+    <section id="end" class="flex-center flex-column">
+      <h1>Done!</h1>
+      <h2>Final Score:</h2>
+      <!-- final score -->
+      <p id="finalScore" class="yourFinalScore" ></p>
+      <!-- form for user to submit score... -->
+      <form>
+        <input type="text" name="username" id="userName" placeholder="Your name">
+        <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" >Submit Score</button>
+        <a href="index.html" class="btn">Would you like to start over?</a>
+      </form>
+    </section>
+  </main>
+  <script src="./assets/js/game-ending.js"></script>
+</body>
+</html>
